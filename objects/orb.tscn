@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0u3rxw8dgkon"]
+
+[ext_resource type="Texture2D" uid="uid://cxscxc8fg0ytg" path="res://content/sprites/orb_a.png" id="1_hshpt"]
+[ext_resource type="Script" path="res://scripts/orb.gd" id="1_m73y6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e0ej4"]
+radius = 16.0
+
+[node name="Orb" type="Node2D"]
+script = ExtResource("1_m73y6")
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="ClickArea"]
+shape = SubResource("CircleShape2D_e0ej4")
+debug_color = Color(0, 0.666667, 1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hshpt")

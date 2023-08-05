@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="SS2D_Material_Shape" load_steps=11 format=3 uid="uid://gqi43wqx35ml"]
+
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material.gd" id="1_xrj1q"]
+[ext_resource type="Texture2D" uid="uid://3604q7p4qrn2" path="res://content/textures/floor_grass.png" id="2_0lx8q"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="3_vlra4"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="4_ugbbf"]
+[ext_resource type="Texture2D" uid="uid://cnhgiy4647dte" path="res://content/textures/floor_dirt.png" id="5_vah5n"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="6_hfjie"]
+[ext_resource type="Texture2D" uid="uid://c5yxtyqy3brw7" path="res://content/textures/floor_stone.png" id="6_qlyvv"]
+
+[sub_resource type="Resource" id="Resource_a4hlg"]
+script = ExtResource("1_xrj1q")
+textures = Array[Texture2D]([ExtResource("2_0lx8q")])
+textures_corner_outer = Array[Texture2D]([])
+textures_corner_inner = Array[Texture2D]([])
+textures_taper_left = Array[Texture2D]([])
+textures_taper_right = Array[Texture2D]([])
+randomize_texture = false
+use_corner_texture = false
+use_taper_texture = false
+fit_mode = 0
+
+[sub_resource type="Resource" id="Resource_8fc5c"]
+script = ExtResource("3_vlra4")
+begin = 0.0
+distance = 180.0
+edgeRendering = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_6dpiu"]
+script = ExtResource("4_ugbbf")
+edge_material = SubResource("Resource_a4hlg")
+normal_range = SubResource("Resource_8fc5c")
+weld = false
+render = true
+z_index = 0
+z_as_relative = true
+offset = -0.5
+
+[resource]
+script = ExtResource("6_hfjie")
+_edge_meta_materials = Array[ExtResource("4_ugbbf")]([SubResource("Resource_6dpiu")])
+fill_textures = Array[Texture2D]([ExtResource("5_vah5n"), ExtResource("6_qlyvv")])
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_mesh_offset = 0.0
+render_offset = 0.0

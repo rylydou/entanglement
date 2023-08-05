@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SS2D_Material_Shape" load_steps=3 format=3 uid="uid://2w61i1sxyq88"]
+
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="1_lwhr3"]
+[ext_resource type="Texture2D" uid="uid://c5yxtyqy3brw7" path="res://content/textures/floor_stone.png" id="1_pehp2"]
+
+[resource]
+script = ExtResource("1_lwhr3")
+_edge_meta_materials = Array[Resource("res://addons/rmsmartshape/materials/edge_material_metadata.gd")]([])
+fill_textures = Array[Texture2D]([ExtResource("1_pehp2")])
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_mesh_offset = 0.0
+render_offset = 0.0
