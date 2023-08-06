@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yxtyqy3brw7"
-path="res://.godot/imported/floor_stone.png-4ca967296bd88e91cff527fc67fba25b.ctex"
+uid="uid://b4e3so0pxk7ns"
+path="res://.godot/imported/edge_dirt.png-0a533694b39c4bc59dd2fc5bad86ed67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://content/textures/floor_stone.png"
-dest_files=["res://.godot/imported/floor_stone.png-4ca967296bd88e91cff527fc67fba25b.ctex"]
+source_file="res://content/textures/edge_dirt.png"
+dest_files=["res://.godot/imported/edge_dirt.png-0a533694b39c4bc59dd2fc5bad86ed67.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

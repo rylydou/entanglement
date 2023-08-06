@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn34xb3lc2uy"
-path="res://.godot/imported/wall_dirt.png-6a8c4bea487d1ebc89b9912f501f7440.ctex"
+uid="uid://d2lutb4albgca"
+path="res://.godot/imported/bomb.png-42a3629fa25e324a605f23f18617e594.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://content/textures/wall_dirt.png"
-dest_files=["res://.godot/imported/wall_dirt.png-6a8c4bea487d1ebc89b9912f501f7440.ctex"]
+source_file="res://content/sprites/bomb.png"
+dest_files=["res://.godot/imported/bomb.png-42a3629fa25e324a605f23f18617e594.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

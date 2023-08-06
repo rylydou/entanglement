@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnhgiy4647dte"
-path="res://.godot/imported/floor_dirt.png-6d42dae7d1cb47df2829808b501e67f4.ctex"
+uid="uid://cd6kop0u8d6kt"
+path="res://.godot/imported/fill_cloud.png-d77b30a00cb78589804a54d7d46094f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://content/textures/floor_dirt.png"
-dest_files=["res://.godot/imported/floor_dirt.png-6d42dae7d1cb47df2829808b501e67f4.ctex"]
+source_file="res://content/textures/fill_cloud.png"
+dest_files=["res://.godot/imported/fill_cloud.png-d77b30a00cb78589804a54d7d46094f1.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

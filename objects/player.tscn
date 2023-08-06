@@ -27,3 +27,7 @@ position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_yv7tk")
+
+[node name="Target" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Target"]

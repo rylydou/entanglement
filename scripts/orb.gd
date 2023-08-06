@@ -29,10 +29,11 @@ func update_state() -> void:
 
 func _input(event: InputEvent) -> void:
 	var mouse_btn_event := event as InputEventMouseButton
-	if mouse_btn_event:
-		if mouse_btn_event.button_index == 1 and mouse_btn_event.is_released():
-			is_active = false
-			update_state()
+	if not mouse_btn_event: return
+	
+	if mouse_btn_event.button_index == 1 and mouse_btn_event.is_released():
+		is_active = false
+		update_state()
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	var mouse_btn_event := event as InputEventMouseButton
