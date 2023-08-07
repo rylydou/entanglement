@@ -1,19 +1,68 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0u3rxw8dgkon"]
+[gd_scene load_steps=9 format=3 uid="uid://c0u3rxw8dgkon"]
 
-[ext_resource type="Texture2D" uid="uid://cxscxc8fg0ytg" path="res://content/sprites/orb_a.png" id="1_hshpt"]
-[ext_resource type="Script" path="res://scripts/orb.gd" id="1_m73y6"]
+[ext_resource type="Script" path="res://scripts/pull_orb.gd" id="1_r7kad"]
+[ext_resource type="Texture2D" uid="uid://cxscxc8fg0ytg" path="res://content/sprites/pull_orb.png" id="2_2g0v3"]
+[ext_resource type="Shader" path="res://shaders/pull_circle.gdshader" id="3_fv0jw"]
+[ext_resource type="Shader" path="res://shaders/pull_line.gdshader" id="3_joj5f"]
+[ext_resource type="Script" path="res://scripts/random_sound.gd" id="5_6xwac"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_e0ej4"]
 radius = 16.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mht3p"]
+shader = ExtResource("3_joj5f")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a2xfd"]
+shader = ExtResource("3_fv0jw")
+shader_parameter/radius = 1.0
+shader_parameter/border = 0.2
+
 [node name="Orb" type="Node2D"]
-script = ExtResource("1_m73y6")
+script = ExtResource("1_r7kad")
 
 [node name="ClickArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 5
 
 [node name="Collision" type="CollisionShape2D" parent="ClickArea"]
 shape = SubResource("CircleShape2D_e0ej4")
 debug_color = Color(0, 0.666667, 1, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_hshpt")
+texture = ExtResource("2_2g0v3")
+
+[node name="Line" type="Line2D" parent="."]
+visible = false
+show_behind_parent = true
+material = SubResource("ShaderMaterial_mht3p")
+points = PackedVector2Array(0, 0, 103, 0)
+width = 16.0
+texture_mode = 2
+antialiased = true
+
+[node name="Target" type="Node2D" parent="."]
+visible = false
+top_level = true
+z_index = 6
+z_as_relative = false
+
+[node name="ColorRect" type="ColorRect" parent="Target"]
+material = SubResource("ShaderMaterial_a2xfd")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 24.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(24, 24)
+mouse_filter = 2
+color = Color(0.156863, 0.8, 0.87451, 1)
+
+[node name="PullSound" type="Node2D" parent="."]
+script = ExtResource("5_6xwac")
+folder = "res://content/sounds/cajon"

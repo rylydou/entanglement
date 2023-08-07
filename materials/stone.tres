@@ -31,7 +31,7 @@ edge_material = SubResource("Resource_hnxq4")
 normal_range = SubResource("Resource_7kfwe")
 weld = false
 render = true
-z_index = 0
+z_index = 2
 z_as_relative = true
 offset = 0.0
 
@@ -39,7 +39,7 @@ offset = 0.0
 script = ExtResource("1_lwhr3")
 _edge_meta_materials = Array[ExtResource("4_pb1ba")]([SubResource("Resource_damkj")])
 fill_textures = Array[Texture2D]([ExtResource("5_xhkdg")])
-fill_texture_z_index = -10
+fill_texture_z_index = 1
 fill_texture_show_behind_parent = false
 fill_mesh_offset = 0.0
 render_offset = 0.0

@@ -1,0 +1,427 @@
+[gd_scene load_steps=40 format=3 uid="uid://cyd16p7h2qef3"]
+
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="1_d2jc2"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="2_c1j0s"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="3_xn5ko"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="4_lhe0e"]
+[ext_resource type="Resource" uid="uid://gqi43wqx35ml" path="res://materials/grass_dirt.tres" id="5_khm8k"]
+[ext_resource type="Texture2D" uid="uid://b553hudajliyi" path="res://content/backgrounds/background.png" id="6_bdlu3"]
+
+[sub_resource type="Resource" id="Resource_mrwrb"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_wmeal"]
+script = ExtResource("3_xn5ko")
+position = Vector2(511.773, 254.407)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_mrwrb")
+
+[sub_resource type="Resource" id="Resource_0ul4p"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_o4kyk"]
+script = ExtResource("3_xn5ko")
+position = Vector2(281.367, 409.132)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_0ul4p")
+
+[sub_resource type="Resource" id="Resource_7chq0"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_uli0k"]
+script = ExtResource("3_xn5ko")
+position = Vector2(252.777, 257.771)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_7chq0")
+
+[sub_resource type="Resource" id="Resource_wgi8k"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_odydn"]
+script = ExtResource("3_xn5ko")
+position = Vector2(138.415, 386.428)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_wgi8k")
+
+[sub_resource type="Resource" id="Resource_4k8h3"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_0lb5u"]
+script = ExtResource("3_xn5ko")
+position = Vector2(652.203, -12.998)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_4k8h3")
+
+[sub_resource type="Resource" id="Resource_y3ts2"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_t0msw"]
+script = ExtResource("3_xn5ko")
+position = Vector2(389.843, 12.2288)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_y3ts2")
+
+[sub_resource type="Resource" id="Resource_vu14m"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_o40kb"]
+script = ExtResource("3_xn5ko")
+position = Vector2(523.546, 91.2731)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_vu14m")
+
+[sub_resource type="Resource" id="Resource_1tm2b"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_3lb4u"]
+script = ExtResource("3_xn5ko")
+position = Vector2(144.301, -87.8378)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_1tm2b")
+
+[sub_resource type="Resource" id="Resource_a3ni5"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_45pqf"]
+script = ExtResource("3_xn5ko")
+position = Vector2(188.869, 68.5689)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_a3ni5")
+
+[sub_resource type="Resource" id="Resource_1mp8r"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_i5vho"]
+script = ExtResource("3_xn5ko")
+position = Vector2(387.32, 296.452)
+point_in = Vector2(-40.9699, -3.92859)
+point_out = Vector2(40.9699, 3.92859)
+properties = SubResource("Resource_1mp8r")
+
+[sub_resource type="Resource" id="Resource_ltbl1"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_1vsjw"]
+script = ExtResource("3_xn5ko")
+position = Vector2(266.069, 19.2095)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_ltbl1")
+
+[sub_resource type="Resource" id="Resource_1wdg1"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_ktb4g"]
+script = ExtResource("3_xn5ko")
+position = Vector2(710.225, 416.7)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_1wdg1")
+
+[sub_resource type="Resource" id="Resource_tlced"]
+script = ExtResource("2_c1j0s")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_63esf"]
+script = ExtResource("3_xn5ko")
+position = Vector2(710.225, 416.7)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_tlced")
+
+[sub_resource type="Resource" id="Resource_jy61e"]
+script = ExtResource("4_lhe0e")
+_points = {
+0: SubResource("Resource_ktb4g"),
+1: SubResource("Resource_wmeal"),
+2: SubResource("Resource_o4kyk"),
+3: SubResource("Resource_63esf"),
+4: SubResource("Resource_uli0k"),
+5: SubResource("Resource_odydn"),
+7: SubResource("Resource_0lb5u"),
+9: SubResource("Resource_t0msw"),
+10: SubResource("Resource_o40kb"),
+12: SubResource("Resource_3lb4u"),
+13: SubResource("Resource_45pqf"),
+14: SubResource("Resource_i5vho"),
+15: SubResource("Resource_1vsjw")
+}
+_point_order = Array[int]([3, 2, 5, 4, 14, 1, 10, 9, 15, 13, 12, 7, 0])
+_constraints = {
+Array[int]([0, 3]): 15
+}
+_next_key = 16
+_material_overrides = {}
+
+[sub_resource type="LabelSettings" id="LabelSettings_rynu0"]
+font_size = 48
+
+[sub_resource type="GDScript" id="GDScript_w0syo"]
+resource_name = "play"
+script/source = "extends Button
+
+func _pressed() -> void:
+	get_tree().change_scene_to_file('res://scenes/level1.tscn')
+"
+
+[sub_resource type="GDScript" id="GDScript_eiice"]
+resource_name = "leaderboard"
+script/source = "extends VBoxContainer
+
+func _ready() -> void:
+	LeaderboardSystem.auth.connect(_on_auth)
+	LeaderboardSystem.leaderboard_changed.connect(_on_leaderboard_changed)
+	if LeaderboardSystem.session_token.length() > 0:
+		_on_auth()
+
+func _on_auth() -> void:
+	LeaderboardSystem.get_leaderboards()
+
+func _on_leaderboard_changed() -> void:
+	for child in get_children():
+		child.queue_free()
+	
+	for i in LeaderboardSystem.leaderboard.size():
+		var item = LeaderboardSystem.leaderboard[i]
+		var label = Label.new()
+		var time = item.score / 10.
+		label.text = str(item.rank) + '. ' + item.player.name + ' ' + time_convert(time)
+		add_child(label)
+
+func time_convert(time_in_sec: float) -> String:
+	var fracts := fmod(time_in_sec, 1)*100
+	var seconds := int(time_in_sec)%60
+	var minutes := int(time_in_sec)/60
+	
+	return \"%02d:%02d:%02d\" % [minutes, seconds, fracts]
+"
+
+[sub_resource type="GDScript" id="GDScript_06rtg"]
+resource_name = "reload"
+script/source = "extends Button
+
+func _ready() -> void:
+	LeaderboardSystem.leaderboard_changed.connect(_on_leaderboard_changed)
+	if LeaderboardSystem.session_token.length() > 0:
+		_on_leaderboard_changed()
+
+func _on_leaderboard_changed() -> void:
+	disabled = false
+
+func _pressed() -> void:
+	LeaderboardSystem.get_leaderboards()
+	disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_r7idn"]
+resource_name = "auth_label"
+script/source = "extends Label
+
+func _ready() -> void:
+	LeaderboardSystem.auth.connect(_on_auth)
+	if LeaderboardSystem.session_token.length() > 0:
+		_on_auth()
+
+func _on_auth() -> void:
+	hide()
+	get_parent().get_child(1).show()
+"
+
+[sub_resource type="GDScript" id="GDScript_g1xkd"]
+resource_name = "username"
+script/source = "extends HBoxContainer
+
+func _ready() -> void:
+	LeaderboardSystem.name_changed.connect(_on_name_changed)
+	$Button.pressed.connect(_on_button_pressed)
+	if LeaderboardSystem.session_token.length() > 0:
+		_on_name_changed()
+
+func _on_name_changed() -> void:
+	$Button.disabled = false
+	$LineEdit.text = LeaderboardSystem.player_name
+
+func _on_button_pressed() -> void:
+	LeaderboardSystem.player_name = $LineEdit.text
+	LeaderboardSystem.change_player_name()
+	$Button.disabled = true
+"
+
+[node name="MainMenu" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.67, 0.67, 0.67, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_bdlu3")
+
+[node name="SS2D_Shape_Closed" type="Node2D" parent="."]
+script = ExtResource("1_d2jc2")
+_points = SubResource("Resource_jy61e")
+shape_material = ExtResource("5_khm8k")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Menu" type="MarginContainer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="UI/Menu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 2
+
+[node name="TitleLabel" type="Label" parent="UI/Menu/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Ball
+Entanglement"
+label_settings = SubResource("LabelSettings_rynu0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="UI/Menu/VBoxContainer2"]
+custom_minimum_size = Vector2(74.25, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Play"
+script = SubResource("GDScript_w0syo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Menu"]
+custom_minimum_size = Vector2(150, 280)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="HeaderLabel" type="Label" parent="UI/Menu/VBoxContainer"]
+layout_mode = 2
+text = "Speedrun Leaderboard"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="HSeparator" type="HSeparator" parent="UI/Menu/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI/Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Menu/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = SubResource("GDScript_eiice")
+
+[node name="Label" type="Label" parent="UI/Menu/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Loading leaderboard..."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Menu/VBoxContainer"]
+layout_mode = 2
+
+[node name="ReloadButton" type="Button" parent="UI/Menu/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+text = "Reload"
+script = SubResource("GDScript_06rtg")
+
+[node name="MarginContainer" type="VBoxContainer" parent="UI/Menu"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="Auth" type="Label" parent="UI/Menu/MarginContainer"]
+layout_mode = 2
+text = "Authenticating..."
+horizontal_alignment = 1
+script = SubResource("GDScript_r7idn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Menu/MarginContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Your username"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+script = SubResource("GDScript_g1xkd")
+
+[node name="LineEdit" type="LineEdit" parent="UI/Menu/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "no name"
+
+[node name="Button" type="Button" parent="UI/Menu/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Submit"

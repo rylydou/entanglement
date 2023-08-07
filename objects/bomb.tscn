@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cmgsdxcwxd1r4"]
+[gd_scene load_steps=10 format=3 uid="uid://cmgsdxcwxd1r4"]
 
 [ext_resource type="Script" path="res://scripts/bomb.gd" id="1_j54iv"]
 [ext_resource type="Texture2D" uid="uid://d2lutb4albgca" path="res://content/sprites/bomb.png" id="2_8wjf4"]
 [ext_resource type="Shader" path="res://shaders/circle.gdshader" id="3_la0gl"]
+[ext_resource type="AudioStream" uid="uid://dapksaanmkmo4" path="res://content/sounds/explosion.wav" id="4_5rila"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m4x7t"]
 radius = 16.0
@@ -11,45 +12,6 @@ radius = 16.0
 shader = ExtResource("3_la0gl")
 shader_parameter/radius = 0.0
 shader_parameter/border = 0.1
-
-[sub_resource type="Animation" id="Animation_tcndr"]
-resource_name = "shockwave"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ColorRect:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ColorRect:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
 
 [sub_resource type="Animation" id="Animation_yjfv6"]
 length = 0.001
@@ -90,6 +52,45 @@ tracks/2/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_tcndr"]
+resource_name = "shockwave"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k1jee"]
 _data = {
 "RESET": SubResource("Animation_yjfv6"),
@@ -98,9 +99,10 @@ _data = {
 
 [node name="Bomb" type="Node2D"]
 script = ExtResource("1_j54iv")
-force = 1.0
 
 [node name="ClickArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
 shape = SubResource("CircleShape2D_m4x7t")
@@ -138,5 +140,8 @@ speed_scale = 4.0
 libraries = {
 "": SubResource("AnimationLibrary_k1jee")
 }
+
+[node name="ExplodeSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_5rila")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

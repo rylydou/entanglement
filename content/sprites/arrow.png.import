@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxscxc8fg0ytg"
-path="res://.godot/imported/orb_a.png-20893400d13890e093f635409b99ef85.ctex"
+uid="uid://dem870ywqvevb"
+path="res://.godot/imported/arrow.png-d1850807c33606f12b8123ef60e2346e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://content/sprites/orb_a.png"
-dest_files=["res://.godot/imported/orb_a.png-20893400d13890e093f635409b99ef85.ctex"]
+source_file="res://content/sprites/arrow.png"
+dest_files=["res://.godot/imported/arrow.png-d1850807c33606f12b8123ef60e2346e.ctex"]
 
 [params]
 
